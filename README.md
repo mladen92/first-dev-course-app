@@ -1,1 +1,2 @@
-# first-dev-course-app
+# First App in Developer Java course
+
