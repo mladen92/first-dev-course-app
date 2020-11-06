@@ -35,20 +35,22 @@
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
     />
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
-    <title>Create User</title>
+    <title>Creat Project</title>
+
+
 </head>
 <body>
+
 <div class="dashboard-main-wrapper">
 
     <!--Navigation bar-->
     <!-- ============================================================== -->
     <div id="nav-placeholder">
-
     </div>
-
     <script>
         $(function () {
             $("#nav-placeholder").load("nav-bar.html");
@@ -67,13 +69,14 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="page-header">
-                        <h2 class="pageheader-title">User Create</h2>
+                        <h2 class="pageheader-title">Project Create</h2>
                         <div class="page-breadcrumb">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Administration</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">User Create</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Project Create</a>
+                                    </li>
                                 </ol>
                             </nav>
                         </div>
@@ -81,112 +84,71 @@
                 </div>
             </div>
             <!-- ============================================================== -->
-            <!-- end pageheader -->
+            <!-- End pageheader-->
             <!-- ============================================================== -->
 
-
-            <!-- ============================================================== -->
-            <!-- Create User Form-->
-            <!-- ============================================================== -->
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="card">
                     <div class="card-body">
                         <form class="needs-validation" novalidate="">
                             <div class="form-row">
                                 <div class="col">
-                                    <label>First Name</label>
-                                    <input type="text" class="form-control" placeholder="First name">
+                                    <label>Project Name</label>
+                                    <input type="text" class="form-control" placeholder="Project Name">
                                 </div>
                                 <div class="col">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col">
-                                    <label>Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Last name">
+                                    <label>Project Code</label>
+                                    <input type="text" class="form-control" placeholder="Project Code">
                                 </div>
                                 <div class="col"></div>
                             </div>
                             <div class="form-row">
                                 <div class="col">
-                                    <label for="inputPhone">Mobile Number</label>
-                                    <input id="inputPhone" type="email" placeholder="Mobile Number"
-                                           class="form-control">
-                                </div>
-                                <div class="col">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <label>Role</label>
+                                    <label>Assigned Manager</label>
                                     <select class="custom-select" name="role">
                                         <option value="Select Role" selected="selected" disabled="disabled">Select
-                                            Role
+                                            Manager
                                         </option>
-                                        <option value="Admin">Admin</option>
-                                        <option value="Manager">Manager</option>
-                                        <option value="Employee">Employee</option>
+                                        <option value="Manager1">Manager1</option>
+                                        <option value="Manager2">Manager2</option>
+                                        <option value="Manager3">Manager3</option>
                                     </select>
                                 </div>
                                 <div class="col"></div>
                             </div>
-                            <label>Gender</label>
-                            <div class="col-sm-10">
 
-                                <label class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" name="radio-inline"
-                                           class="custom-control-input"><span
-                                        class="custom-control-label">Male</span>
-                                </label>
-                                <label class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" name="radio-inline"
-                                           class="custom-control-input"><span
-                                        class="custom-control-label">Female</span>
-                                </label>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label> Start date</label><br>
+                                    <input type="date" id="start_date" name="start_date">
+                                </div>
+                                <div class="col-9">
+                                    <label> End date</label><br>
+                                    <input type="date" id="end_date" name="end_date">
+                                </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="col">
-                                    <label for="inputEmail">Email address</label>
-                                    <input id="inputEmail" type="email" placeholder="name@example.com"
-                                           class="form-control">
+                                    <label for="projectDetail">ProjectDetail</label>
+                                    <textarea class="form-control" id="projectDetail" rows="3"></textarea>
                                 </div>
                                 <div class="col"></div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="col">
-                                    <label for="inputPassword">Password</label>
-                                    <input id="inputPassword" type="password" placeholder="Password"
-                                           class="form-control">
-                                </div>
-                                <div class="col"></div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="col">
-                                    <label for="inputPassword">Password Confirmation</label>
-                                    <input id="confirmPassword" type="password" placeholder="Re-enter Password"
-                                           class="form-control"><br>
-                                </div>
-                                <div class="col"></div>
-                            </div>
-
-
-                            <div class="col-sm-6 pl-0">
-                                <p class="text-right" style="float: right">
-                                    <button type="submit" style="background-color:#038FF5"
-                                            class="btn btn-space btn-primary">
-                                        Save
-                                    </button>
-                                </p>
                             </div>
                         </form>
                     </div>
-
-                    <!-- ============================================================== -->
-                    <!-- end validation form -->
-                    <!-- ============================================================== -->
+                    <div class="col-sm-6 pl-0">
+                        <p class="text-right" style="float: right">
+                            <button type="submit" style="background-color:#038FF5"
+                                    class="btn btn-space btn-primary">
+                                Save
+                            </button>
+                        </p>
+                    </div>
 
                     <!-- ============================================================== -->
                     <!--Table -->
@@ -198,22 +160,22 @@
                             <table class="table table-striped" width="150">
                                 <thead>
                                 <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">E-Mail(username)</th>
-                                    <th scope="col">Gender</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Role</th>
+                                    <th scope="col">Project Code</th>
+                                    <th scope="col">Project Name</th>
+                                    <th scope="col">Start/End Date</th>
+                                    <th scope="col">Manger</th>
+                                    <th scope="col">Status</th>
                                     <th scope="col">Action</th>
 
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>John Kesy</td>
-                                    <td>johnk@gmail.com</td>
-                                    <td>Male</td>
-                                    <td>(571)111-2222</td>
-                                    <td>Admin</td>
+                                    <td>PRJ001</td>
+                                    <td>HR CRM</td>
+                                    <td>11/10/2019 - 11/10/2020</td>
+                                    <td>Manager1</td>
+                                    <td>In Progress</td>
                                     <td>
                                         <p class="text">
                                             <button type="submit" class="btn btn-space btn-primary"
@@ -221,16 +183,19 @@
                                             </button>
                                             <button class="btn btn-space btn-secondary"
                                                     style="background-color:#C42828">Delete
+                                            </button>
+                                            <button class="btn btn-space btn-secondary"
+                                                    style="background-color:#54A81E">Complete
                                             </button>
                                         </p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>John Kesy</td>
-                                    <td>johnk@gmail.com</td>
-                                    <td>Male</td>
-                                    <td>(571)111-2222</td>
-                                    <td>Admin</td>
+                                    <td>PRJ002</td>
+                                    <td>HR CRM</td>
+                                    <td>11/10/2019 - 11/10/2020</td>
+                                    <td>Manager2</td>
+                                    <td>Open</td>
                                     <td>
                                         <p class="text">
                                             <button type="submit" class="btn btn-space btn-primary"
@@ -238,16 +203,19 @@
                                             </button>
                                             <button class="btn btn-space btn-secondary"
                                                     style="background-color:#C42828">Delete
+                                            </button>
+                                            <button class="btn btn-space btn-secondary"
+                                                    style="background-color:#54A81E">Complete
                                             </button>
                                         </p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>John Kesy</td>
-                                    <td>johnk@gmail.com</td>
-                                    <td>Male</td>
-                                    <td>(571)111-2222</td>
-                                    <td>Admin</td>
+                                    <td>PRJ003</td>
+                                    <td>HR CRM</td>
+                                    <td>11/10/2019 - 11/10/2020</td>
+                                    <td>Manager3</td>
+                                    <td>Completed</td>
                                     <td>
                                         <p class="text">
                                             <button type="submit" class="btn btn-space btn-primary"
@@ -255,6 +223,9 @@
                                             </button>
                                             <button class="btn btn-space btn-secondary"
                                                     style="background-color:#C42828">Delete
+                                            </button>
+                                            <button class="btn btn-space btn-secondary"
+                                                    style="background-color:#54A81E">Complete
                                             </button>
                                         </p>
                                     </td>
@@ -267,14 +238,19 @@
                     <!-- End Table -->
                     <!-- ============================================================== -->
 
+
                 </div>
             </div>
 
 
         </div>
 
+
     </div>
+
+
 </div>
+
 <!-- ============================================================== -->
 <!-- =================Footer==================== -->
 <div style="text-align: -webkit-center" id="footer">
@@ -311,5 +287,6 @@
 <script src="assets/libs/js/dashboard-ecommerce.js"></script>
 <!-- My script for icons -->
 <script src="https://kit.fontawesome.com/486587c22a.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
